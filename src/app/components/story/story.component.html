@@ -1,0 +1,17 @@
+
+<span class="title" >{{
+  story?.title
+}}</span>
+
+<p class="subTitle">
+  {{ story?.score }} points by {{ story?.by }} {{ story?.time | date }} ago |
+  <span id="comment" (click)="loadComments(story?.kids)">{{ story?.kids?.length || "No " }} comments</span>
+</p>
+
+<div *ngIf="commentExpand">
+  <p class="status" *ngIf="loading">Loading comments..</p>
+  <article *ngFor="let comment of comments">
+    <p class="comment" [innerHtml]="comment?.text"></p>
+    <p class="time">by {{ comment?.by }} on {{ comment?.time }}</p>
+  </article>
+</div>

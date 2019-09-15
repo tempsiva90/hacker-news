@@ -1,0 +1,8 @@
+<app-header></app-header>
+<div class="stories">
+  <div *ngFor="let id of storiesId; let i = index">
+    <article>
+      <app-story [story]="stories[id]"></app-story>
+    </article>
+  </div>
+</div>

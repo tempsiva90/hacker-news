@@ -1,0 +1,16 @@
+:host{
+    counter-reset: section;
+
+}
+.stories{
+    background: #efeee5;
+    padding-left: 10px;
+}
+article::before {
+    counter-increment: section;                   /* Increment the value of section counter by 1 */
+    content: " " counter(section) " . "; 
+    font-size:.9rem;
+    font-weight: bold;   /* Display the word 'Section ', the value of 
+                                                     section counter, and a colon before the content
+                                                     of each h3 */
+  }

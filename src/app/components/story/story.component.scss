@@ -1,0 +1,27 @@
+.title{
+    font-size: .9rem;
+    font-weight: 560;
+    color: #333232;
+    font-family: sans-serif;
+}
+
+.subTitle{
+    font-size: 0.8rem;
+    color: grey;
+    margin: 2px 2px 15px 20px;
+}
+
+.loading{
+    margin-left:10vw;
+}
+article{
+    margin-left: 5vw;
+    border-bottom: 1px solid #e6e2e2;
+    .comment{
+        text-align: justify;
+    }
+    p.time{
+        text-align: right;
+    margin: 0px;
+    }
+}
